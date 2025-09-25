@@ -1,0 +1,151 @@
+/* Universal Styles for all pages */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff3e0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #9e5aff;
+  padding: 15px 20px;
+}
+
+/* Navigation Menu */
+nav {
+  overflow: hidden; /* clear floats */
+}
+
+nav a {
+  color: #fff42c;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  padding: 12px 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Clear floats after nav links */
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px; /* unified width */
+  margin: auto;
+}
+
+/* Headings */
+h1 {
+  color: #fff42c;  /* Changed from orange to white */
+  margin-top: 0;
+}
+
+/* Lists - for Hobbies and Contact pages */
+ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.6;
+}
+
+li {
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+li a {
+  color: #000000;  /* Changed from orange to white */
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* Image Gallery Styling */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 170px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  float: left;
+}
+
+/* Clear floats after gallery */
+.gallery::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  background: #ffe0b2;
+  margin-top: 40px;
+  color: #663c00;
+}
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffffff; /* Changed from orange to white */
+  color: #9e5aff; /* To keep contrast, text in orange */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* zebra striping */
+}
+
+tr:hover {
+  background-color: #ffe0b2; /* highlight on hover */
+  cursor: pointer;
+}
+
+#img1 {
+  object-position: top;
+}
+
+#img2 {
+  object-position: center;
+}
+
+#img3 {
+  object-position: center;
+}
